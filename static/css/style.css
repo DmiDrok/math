@@ -73,7 +73,7 @@ body {
 
 .game {
 	margin: 25px 0 0 0;
-	padding: 0 10px 60px 10px;
+	padding: 0 10px 30px 10px;
 }
 
 .game .container, .game__row {
@@ -313,12 +313,12 @@ body {
     z-index: 150;
     color: #fff;
     transition-duration: .5s;
-    transition-property: opacity;
+    transition-property: left;
 }
 
 .mobile-navigation.active {
-	left: 0;
 	opacity: 1;
+	left: 0;
 }
 
 .mobile-navigation .container {

@@ -16,11 +16,11 @@ function setCorrectMobileNav() {
 
 	// Закрытие меню
 	function closeNav() {
-		nav.style.opacity = 0;
+		nav.style.left = -500 + "px";
 		setTimeout(() => {
 			nav.classList.remove("active");
 			burger.classList.remove("active");
-			nav.style.opacity = "";
+			nav.style.left = "";
 		}, 550);
 	}
 
@@ -28,7 +28,7 @@ function setCorrectMobileNav() {
 	const nav = document.querySelector(".mobile-navigation");
 	const close = nav.querySelector(".close");
 
-	document.addEventListener("click", (event) => {
+	document.addEventListener("touchstart", (event) => {
 		if (nav.classList.contains("active") && event.target.closest(".nav") != nav) {
 			closeNav();
 		}
