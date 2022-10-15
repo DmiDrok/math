@@ -6,6 +6,12 @@ function gameOnFullScreen() {
 	game.style.height = (window.innerHeight - header.clientHeight - parseFloat(getComputedStyle(game).marginTop)) + "px";
 }
 
+// Попап с настройками на весь экран
+function optionsPopupOnFullScreen() {
+	const popup = document.querySelector(".popup");
+	popup.style.height = window.innerHeight + "px";
+}
+
 // Настройка мобильного меню
 function setCorrectMobileNav() {
 	// Открытие меню
@@ -61,6 +67,7 @@ function setOptionsToLocalStorage() {
 
 try {
 	gameOnFullScreen();
+	optionsPopupOnFullScreen();
 	setCorrectMobileNav();
 	setOptionsToLocalStorage();
 } catch(err) {
