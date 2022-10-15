@@ -83,7 +83,7 @@ function changeCategory(allCats, saveCategory) {
 	const secondValueHTML = document.querySelector(".second-value");
 	const resultHTML = document.querySelector(".result");
 
-	const answers = Array.from(document.querySelectorAll(".answers__value")); // Варианты ответов
+	const answers = Array.from(document.querySelectorAll(".answers__value span")); // Варианты ответов
 	answers.forEach(item => {
 		item.classList.remove("correct");
 		item.value = null;
