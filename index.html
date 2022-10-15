@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="static/css/style.css">
+	<title>Математика</title>
+</head>
+<body>
+	<audio src="./static/sound/wrong.mp3" class="wrong-sound"></audio>
+
+	<section class="popup">
+		<div class="options-popup">
+			<div class="container">
+				<p class="close">X</p>
+				<div class="options-popup__row">
+					<label class="option">
+						<input type="checkbox" class="negative-values">
+						<span>Отрицательные значения</span>
+					</label>
+
+					<label class="option">
+						<input type="checkbox" class="float-values">
+						<span>Дробные значения</span>
+					</label>
+
+					<button class="apply">
+						Применить
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mobile-navigation nav">
+		<p class="close">X</p>
+		<div class="container">
+			<p class="nav__category">Сложение</p>
+			<p class="nav__category">Вычитание</p>
+			<p class="nav__category">Умножение</p>
+			<p class="nav__category">Деление</p>
+		</div>
+	</section>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__row">
+				<nav class="nav">
+					<p class="nav__category">Сложение</p>
+					<p class="nav__category">Вычитание</p>
+					<p class="nav__category">Умножение</p>
+					<p class="nav__category">Деление</p>
+				</nav>
+
+				<nav class="nav-mobile">
+					<div class="burger">
+						<i class="burger__line"></i>
+						<i class="burger__line"></i>
+						<i class="burger__line"></i>
+					</div>
+				</nav>
+			</div>
+
+			<div class="options">
+				<img src="./static/img/options2.png" alt="options">
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="game">
+			<div class="container">
+				<div class="game__row">
+					<div class="game__question question">
+						<p class="question__text">
+							<span class="first-value"></span>
+							<span class="action"></span>
+							<span class="second-value"></span>
+							<span class="equal">=</span>
+							<span class="result">?</span>
+						</p>
+					</div>
+					<div class="game__answers answers">
+						<p class="answers__value answers__value_1"></p>
+						<p class="answers__value answers__value_2"></p>
+						<p class="answers__value answers__value_3"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Подключение скриптов JS -->
+	<script src="./static/js/setup.js"></script>
+	<script src="./static/js/game.js"></script>
+</body>
+</html>
